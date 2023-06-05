@@ -64,7 +64,7 @@ const Home = async () => {
   const questions = await getQuestions();
 
   return (
-  <div className='lg:pt-[5%] md:pt-30 absolute top-[30vh]'>
+  <div className=''>
     <div className=''>
       <Quiz questions={questions} totalQuestions={5} />
     </div>
