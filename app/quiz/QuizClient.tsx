@@ -40,7 +40,7 @@ const Quiz = ({ questions, totalQuestions }: Props) => {
   };
 
   return (
-    <div className=' p-20 text-black text-center justify-center'>
+    <div className=' text-black text-center justify-center'>
       <p className='p-8 font-bold text-[20px]'>得分: {score}</p>
       <p className='text-black font-bold text-[16px] '>
         當前第 {currentQuestionIndex + 1} 題  共 {totalQuestions} 題
