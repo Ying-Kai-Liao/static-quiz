@@ -64,7 +64,11 @@ const Home = async () => {
   const questions = await getQuestions();
 
   return (
-  <div className='lg:pt-[5%] md:pt-[5%] pt-20'><Quiz questions={questions} totalQuestions={5} /></div>
+  <div className='lg:pt-[5%] md:pt-[5%] pt-20'>
+    <div className=''>
+      <Quiz questions={questions} totalQuestions={5} />
+    </div>
+  </div>
   )
 };
 

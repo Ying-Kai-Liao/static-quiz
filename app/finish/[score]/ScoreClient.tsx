@@ -8,12 +8,13 @@ import Link from "next/link";
 interface ScoreClientProps {
   score: string;
 }
-//加一些固定的按鈕之類的
+
 const ScoreClient: React.FC<ScoreClientProps> = ({
   score
 }) => {
   const text = `本次測驗共得${score}分`;
-
+  
+  //判斷視窗大小
   const size = useWindowSize();
   console.log(size);
   const source = size.width > 768 ?
@@ -27,19 +28,17 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
     }
   }
 
-  console.log(parseInt(score)>=3);
-  //加上各種得分場景的圖案
-
-
+  //回傳REACT
   return (
     <div className="bg-white">
+      {/* 參加抽書活動 */}
       <div className={`
            ${size.width > 768
-            ? "z-10 w-full text-center absolute top-[37%] left-[65%] translate-x-[-50%] translate-y-[-50%]"
+            ? "z-10 w-full text-center absolute top-[25%] left-[35%] translate-x-[-50%] translate-y-[-50%]"
             : "z-10 w-full text-center absolute top-[53%] left-[50%] translate-x-[-50%] translate-y-[-50%]"}`}>
         <Link href='https://pse.is/4z6x4c'>
           <Button className="btn-icon mt-2" color="facebook" type="button">
-            <img src='/button.png' width={250} height={100}/>
+            <img src='/button.png' width={200} height={100}/>
           </Button>
         </Link>
       </div>
@@ -56,7 +55,7 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </div>
     {(parseInt(score)>=3) ? (
       <>
-        {/* 相關新聞 */}
+      {/* 相關新聞 */}
       <div className={`
            ${size.width > 768
             ? "w-full text-center absolute top-[57%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
