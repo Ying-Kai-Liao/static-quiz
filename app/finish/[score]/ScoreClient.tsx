@@ -88,8 +88,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       {/* 社群連結 */}
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[310%]  left-[50%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[310%]  left-[50%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://www.facebook.com/moneyweekly.tw?mibextid=LQQJ4d">
           <button type="button">
@@ -99,8 +99,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </div>
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[46%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[310%]  left-[35%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[46%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[310%]  left-[35%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://lin.ee/Q0VwsSQ">
           <button color="line" type="button">
@@ -110,8 +110,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </div>
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[54%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[310%]  left-[65%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[54%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[310%]  left-[65%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://instagram.com/moneyweekly.ig?igshid=MzRlODBiNWFlZA==">
           <button color="instagram" type="button">
@@ -166,8 +166,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       {/* 社群連結 */}
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[300%]  left-[50%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[50%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[300%]  left-[50%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://www.facebook.com/moneyweekly.tw?mibextid=LQQJ4d">
           <button type="button">
@@ -177,8 +177,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </div>
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[46%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[300%]  left-[35%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[46%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[300%]  left-[35%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://lin.ee/Q0VwsSQ">
           <button color="line" type="button">
@@ -188,8 +188,8 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </div>
       <div className={`
            ${size.width > 640
-          ? 'text-center absolute top-[82%] left-[54%] translate-x-[-50%] translate-y-[-50%]'
-          : 'text-center absolute top-[300%]  left-[65%] translate-x-[-50%] translate-y-[-50%]'}
+          ? 'z-10 text-center absolute top-[82%] left-[54%] translate-x-[-50%] translate-y-[-50%]'
+          : 'z-10 text-center absolute top-[300%]  left-[65%] translate-x-[-50%] translate-y-[-50%]'}
         `}>
         <Link href="https://instagram.com/moneyweekly.ig?igshid=MzRlODBiNWFlZA==">
           <button color="instagram" type="button">
