@@ -200,7 +200,7 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       </>
     )}
       <div className={`
-          relative ${size.width > 640 ? '-mt-[320px] -mx-[100px]' : '-mx-[16px]'}
+          relative ${size.width > 640 ? '-mx-[100px]' : '-mx-[16px]'}
         `}>
         <Image
           src={source}

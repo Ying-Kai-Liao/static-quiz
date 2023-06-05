@@ -45,7 +45,7 @@ const Quiz = ({ questions, totalQuestions }: Props) => {
   const sizeNow = size.height > 700 ? "mt-[30vh]" : "mt-[25vh]"
 
   return (
-    <div className=' text-black text-center justify-center'>
+    <div className=' text-black text-center justify-center lg:pt-40'>
       <div className={sizeNow}>
         <p className='p-8 font-bold text-[20px]'>得分: {score}</p>
         <p className='text-black font-bold text-[16px] '>

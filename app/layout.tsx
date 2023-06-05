@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <div className='flex flex-col [&>main bg-[url("/quiz.png")] bg-cover bg-no-repeat bg-center min-h-[94.5vh] items-center'>
           <main className={`${quicksand.variable} 
             font-quicksand max-w-[900px] w-full m-auto flex flex-col items-center 
-            sm:absolute  sm:max-w-nonelg:pt-40 xs:pt-20
+            sm:absolute  sm:max-w-none xs:pt-20
           `}>
             {children}
           </main>
