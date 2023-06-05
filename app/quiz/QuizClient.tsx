@@ -41,12 +41,14 @@ const Quiz = ({ questions, totalQuestions }: Props) => {
     if (newQuestionIndex < 0 || newQuestionIndex >= totalQuestions) return;
     setCurrentQuestionIndex(newQuestionIndex);
   };
-
-  const sizeNow = size.height > 700 ? "mt-[30vh]" : "mt-[25vh]"
+  console.log(size);
+  const sizeHeightNow = size.height > 800 ? "mt-[30vh]" : "mt-[25vh]"
+  const sizeWidthNow = size.width > 1024 ? size.height > 1000 ? "pt-40" : "" : ""
 
   return (
-    <div className=' text-black text-center justify-center lg:pt-40'>
-      <div className={sizeNow}>
+    <div className=' text-black text-center justify-center'>
+      <div className={sizeWidthNow}>
+      <div className={sizeHeightNow}>
         <p className='p-8 font-bold text-[20px]'>得分: {score}</p>
         <p className='text-black font-bold text-[16px] '>
           當前第 {currentQuestionIndex + 1} 題  共 {totalQuestions} 題
@@ -66,6 +68,7 @@ const Quiz = ({ questions, totalQuestions }: Props) => {
             onClick={currentQuestionIndex === totalQuestions - 1 ? () => router.push(`/finish/${score}`) : () => handleChangeQuestion(1)}
           />
         </div>
+      </div>
       </div>
     </div>
   );
