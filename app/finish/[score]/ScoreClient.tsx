@@ -34,7 +34,7 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
       {/* 參加抽書活動 */}
       <div className={`
            ${size.width > 640
-            ? "z-10 w-full text-center absolute top-[30vw] left-[35%] translate-x-[-50%] translate-y-[-50%]"
+            ? "z-10 w-full text-center absolute top-[29vw] left-[32%] translate-x-[-50%] translate-y-[-50%]"
             : "z-10 w-full text-center absolute top-[115vw] left-[50%] translate-x-[-50%] translate-y-[-50%]"}`}>
         <Link href='https://pse.is/4z6x4c'>
           <button type="button">
@@ -215,3 +215,4 @@ const ScoreClient: React.FC<ScoreClientProps> = ({
 };
 
 export default ScoreClient;
+
